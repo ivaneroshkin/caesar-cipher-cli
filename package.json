@@ -1,0 +1,25 @@
+{
+  "name": "caesar-cipher-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "caesar-cipher-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivaneroshkin/caesar-cipher-cli.git"
+  },
+  "author": "Ivan Eroshkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivaneroshkin/caesar-cipher-cli/issues"
+  },
+  "homepage": "https://github.com/ivaneroshkin/caesar-cipher-cli#readme",
+  "engines": {
+    "node": ">=12.18.4"
+  },
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
+}
