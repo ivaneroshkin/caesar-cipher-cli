@@ -1,23 +1,23 @@
-// TODO: Customize console notifications
+const chalk = require('chalk');
 
 function shiftOptionRequired() {
-  process.stderr.write(`Error: Shift option is required!\n`)
+  process.stderr.write(`Error: Shift option is required!\n`);
 }
 
 function shiftOptionIsNotNumber() {
-  console.log(`Error: Shift option should be number!`);
+  console.log(chalk`{bgRed.black Error:} Shift option should be number!`);
 }
 
 function shiftOptionIsNotInteger() {
-  console.log(`Error: Shift option should be an integer!`);
+  console.log(chalk`{bgRed.black Error:} Shift option should be an integer!`);
 }
 
 function actionOptionRequired() {
-  process.stderr.write(`Error: Action option is required!\n`)
+  process.stderr.write(`Error: Action option is required!\n`);
 }
 
 function actionOptionIsNotCorrect() {
-  console.log(`Error: Action option can be only «encode» or «decode» values!`);
+  console.log(chalk`{bgRed.black Error:} Action option can be only «encode» or «decode» values!`);
 }
 
 function fileDoesNotExist(file) {
@@ -33,11 +33,11 @@ function fileDoesNotWritable(file) {
 }
 
 function pipelineError(error) {
-  console.log(`Error: transform finished with error: ${error} !`);
+  console.log(chalk`{bgRed.black Error:} transform finished with error: ${error} !`);
 }
 
 function pipelineSuccess() {
-  console.log(`Success: transform finished successfully!`);
+  console.log(chalk`{bgGreen.black Success:} transform finished successfully!`);
 }
 
 module.exports = {
