@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 
 function shiftOptionRequired() {
-  process.stderr.write(`Error: Shift option is required!\n`);
+  console.error(chalk`{bgRed.black Error:} Shift option is required!`);
 }
 
 function shiftOptionIsNotNumber() {
@@ -13,7 +13,7 @@ function shiftOptionIsNotInteger() {
 }
 
 function actionOptionRequired() {
-  process.stderr.write(`Error: Action option is required!\n`);
+  console.error(chalk`{bgRed.black Error:} Action option is required!`);
 }
 
 function actionOptionIsNotCorrect() {
@@ -21,15 +21,15 @@ function actionOptionIsNotCorrect() {
 }
 
 function fileDoesNotExist(file) {
-  process.stderr.write(`Error: File ${file} does not exist!\n`);
+  console.error(chalk`{bgRed.black Error:} File ${file} does not exist!`);
 }
 
 function fileDoesNotReadable(file) {
-  process.stderr.write(`Error: File '${file}' is not readable!\n`);
+  console.error(chalk`{bgRed.black Error:} File '${file}' is not readable!`);
 }
 
 function fileDoesNotWritable(file) {
-  process.stderr.write(`Error: File '${file}' is not writable!\n`);
+  console.error(chalk`{bgRed.black Error:} File '${file}' is not writable!`);
 }
 
 function pipelineError(error) {
